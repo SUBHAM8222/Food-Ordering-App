@@ -10,7 +10,7 @@ const DUMMY_MEALS = [
   },
   {
     id: "m2",
-    name: "Schnitzel",
+    name: "chicken",
     description: "A german specialty!",
     price: 16.5,
   },
