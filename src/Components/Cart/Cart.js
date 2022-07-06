@@ -23,7 +23,7 @@ const removeitemhandler=(item)=>{
 }
 const additemhandler=(item)=>{
   cartcntx.addItem({ ...item,quantity:1})
-  console.log(item);
+  
 }
 
   const cartItems = (
@@ -42,6 +42,11 @@ const additemhandler=(item)=>{
 
     total= `$${total.toFixed(2)}`;
 
+    const display=()=>{
+      console.log('hello');
+      alert('thakyoufor ordering');
+    }
+
   return (
     <Modal onclose={props.onclose}>
       {cartItems}
@@ -53,7 +58,7 @@ const additemhandler=(item)=>{
       </div>
       <div className='actions'>
         <button className='button--alt' onClick={props.onclose}>Close</button>
-       {hasItems&&<button className='button'>Order</button>}
+       {hasItems&&<button className='button' onClick={display}>Order</button>}
 
       </div>
       </Modal>
